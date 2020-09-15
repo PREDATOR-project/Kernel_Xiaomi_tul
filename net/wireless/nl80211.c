@@ -6268,7 +6268,7 @@ static int parse_bss_select(struct nlattr *nla, struct wiphy *wiphy,
 		bss_select->param.adjust.delta = adj_param->delta;
 		if (!is_band_valid(
 			wiphy,
-			((enum ieee80211_band)(bss_select->param.adjust.band))
+			((enum nl80211_band)(bss_select->param.adjust.band))
 			))
 			return -EINVAL;
 	}
