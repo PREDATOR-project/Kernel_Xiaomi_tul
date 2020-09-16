@@ -6981,7 +6981,7 @@ nl80211_parse_sched_scan(struct wiphy *wiphy, struct wireless_dev *wdev,
 		if (!is_band_valid(
 			wiphy,
 			(enum ieee80211_band)(request->rssi_adjust.band)
-			) {
+			)) {
 			err = -EINVAL;
 			goto out_free;
 		}
